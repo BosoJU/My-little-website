@@ -1,0 +1,169 @@
+/* GENERAL */
+:root {
+    --primary-color: #7469B6;
+    --background-color: #F5F5F7;
+    --text-color: #333;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --font-family: "Montserrat Alternates", sans-serif;
+}
+
+body {
+    background-image: url('./Sources/layered-waves-haikei.svg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+
+/* CV */
+.CV {
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin: 10px 0;
+    height: auto;
+}
+
+.separation {
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 10px; 
+    padding: 15px; 
+    margin-bottom: 20px; /* Espacement entre les expériences */
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+.content {
+    background-color: #fff; 
+    padding: 20px; /* espace interne */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ombre légère */
+    text-align: center; 
+    justify-content:center;
+
+}
+
+
+/* Project card */
+.card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+
+.uniform-card {
+    padding: 10px;
+    margin: 15px;
+}
+
+/* Conteneur des projets */
+.bottom-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacement entre les cartes */
+}
+
+.uniform-card {
+    width: 300px; 
+    height: 450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white; 
+}
+
+.card-img {
+    width: 100%; /* L'image remplit toujours la carte */
+    height: 200px; /* Taille uniforme pour les images */
+    object-fit: cover; /* Les images sont bien cadrées */
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+
+/* En tête et CV */
+.padding{
+padding-left: 100px;
+padding-right: 100px;
+}
+
+.profile-pic {
+    border-radius: 50%; 
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Icones */
+.fa-linkedin-in {
+    color: #0077b5; 
+}
+
+.fa-paper-plane {
+    color: #00aaff; 
+}
+
+.fa-github {
+    color: #181717; 
+}
+
+i{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.test{
+    border: 5px solid yellow;
+}
+
+@media (max-width:770px){
+    .professional, .langue, .contact, .formation{
+        height: auto !important;
+    }
+    .container{
+    min-width: 350px;
+}
+
+.container-fluid{
+    justify-content: center;
+    justify-items: center;
+}
+}
+
+@media (max-width: 400px){
+    i{
+        margin:unset;
+        font-size: 15px;
+    }
+}
+
+
+
