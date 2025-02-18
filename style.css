@@ -165,5 +165,22 @@ i{
     }
 }
 
+@media (max-width:345px){
+    .professional, .langue, .contact, .formation{
+        height: auto !important;
+    }
+    .container{
+    min-width: 250px;
+}
 
+.container-fluid{
+    justify-content: center;
+    justify-items: center;
+}
+
+.icones{
+    display: inline;
+}
+
+}
 
